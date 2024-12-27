@@ -1,0 +1,104 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+       
+        Scanner sc = new Scanner(System.in);
+        int mas = sc.nextInt();//空いてるマスの数
+        boolean ens =false;
+        int haba = sc.nextInt();//ビンゴサイズ
+        int[][] bingo = new int[haba*haba][2];
+        int hida=0;
+        int migi=0;
+        int[] tate=new int[haba];
+        int[] yoko=new int[haba];
+        for(int i=0; i<haba*haba; i++){
+                int ms = sc.nextInt();
+                bingo[i][0]=ms;
+        }
+        for(int i=0; i<mas; i++){
+                int ms = sc.nextInt();
+                for(int h=0; h<haba*haba; h++){
+                    if(bingo[h][0]==ms){
+                        bingo[h][1]=1;
+                    }
+                }
+        }
+        for(int i=0; i<haba*haba; i++){
+            if(bingo[i][1]==1){
+                    tate[i%haba]++;
+                    yoko[i/haba]++;
+                    if(i%(haba+1)==0){
+                        hida++;
+                    }
+                    if(i%(haba-1)==0&&i!=0&&i!=haba*haba-1){
+                        migi++;
+                    }
+            }
+        }
+        boolean tat=true;
+        boolean yok=true;
+        for(int i=0; i<haba; i++){
+            if(tate[i]==haba-1){
+                if(tat){
+                    System.out.println("以下の番号が当たればタテビンゴ\n----");
+                    tat=false;
+                }
+                for(int h=i; h<haba*haba; h=h+haba){
+                    if(bingo[h][1]==0){
+                        System.out.println(bingo[h][0]);
+                        ens=true;
+                        break;
+                    }
+                }
+            }
+            if(!tat&&i==haba-1){
+                System.out.println("----");
+            }
+        }
+       
+        for(int i=0; i<haba; i++){
+            if(yoko[i]==haba-1){
+                if(yok){
+                    System.out.println("以下の番号が当たればヨコビンゴ\n----");
+                    yok=false;
+                }
+                for(int h=i*haba;;h++){
+                    if(bingo[h][1]==0){
+                        System.out.println(bingo[h][0]);
+                        ens=true;
+                        break;
+                    }
+                }
+            }
+           
+            if(!yok&&i==haba-1){
+                System.out.println("----");
+            }
+        }
+        if(hida==haba-1){
+            System.out.println("以下の番号が当たれば右下ビンゴ\n----");
+                for(int h=0;;h=h+haba+1){
+                    if(bingo[h][1]==0){
+                        System.out.println(bingo[h][0]);
+                        ens=true;
+                        break;
+                    }
+                }
+            System.out.println("----");
+        }
+        if(migi==haba-1){
+            System.out.println("以下の番号が当たれば右上ビンゴ\n----");
+                for(int h=haba-1;;h=h+haba-1){
+                    if(bingo[h][1]==0){
+                        System.out.println(bingo[h][0]);
+                        ens=true;
+                        break;
+                    }
+                }
+            System.out.println("----");
+        }
+        if(ens==false){
+            System.out.println("リーチなし！");
+        }
+    }
+}
