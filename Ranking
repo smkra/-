@@ -1,0 +1,77 @@
+Stringを使った個人的に早そうな順位付け。
+タイ(同率)にも対応。
+(入力が早い順に変更することも可)
+ソートもクイックソート？(名前忘れた)とにかく早いやり方にしてるから大規模データでも早いはず
+
+import java.util.*;
+import java.util.Map;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.ArrayList;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int how = 0;
+        Map<Integer,String> zyu = new LinkedHashMap<>();
+        List<Integer> num = new ArrayList<>();
+        //Arrays.fill(num,-1);//スコア0がある場合
+        for(int i=0; ; i++){
+            try{
+            Integer ho = sc.nextInt();
+            how++;
+            String ka = Integer.toString(i);
+            if(zyu.containsKey(ho)==false){
+                num.add(ho);
+                zyu.put(ho,ka);
+            }else{
+                zyu.put(ho,zyu.get(ho)+" "+ka);//同率用、俺はここにスペースを入れなかったせいでミスった
+            }
+            }catch(NoSuchElementException e){
+                break;
+            }
+            
+        }
+        
+        Sort(num,0,num.size()-1);
+        int[] ans = new int[how];
+        int count=how;//順位付け逆にしたいならここを1にして→
+        for(int i=0; i<num.size(); i++){
+            int zyun=count;
+            if(zyu.containsKey(num.get(i))==true){
+                //System.out.println(num[how-i]);
+                String[] nuh = zyu.get(num.get(i)).split(" ");
+                for(int h=0; h<nuh.length; h++){
+                    Integer hu = Integer.parseInt(nuh[h]);
+                    ans[hu]=zyun;//もし同率でも順番早い順とかで優劣付けるんだったらここをcountに
+                    count--;//→ここを++に
+                }
+            }else{//0まで行ったら終わり、配列じゃなくてリストでも良いかもこれ
+                break;
+            }
+        }
+        for(int i=0; i<how; i++){
+            System.out.println(ans[i]);
+        }
+        
+    }
+    
+    static void Sort(List<Integer> num,int left,int rigth){
+        if(left>=rigth-1){
+            return;
+        }
+        int jug = num.get(rigth);
+        int mid = left;
+        for(int i=left; i<rigth+1; i++){
+            if(num.get(i)<jug){
+                int kari = num.get(i);
+                num.set(i,num.get(mid));
+                num.set(mid,kari);
+                mid++;
+            }
+        }
+        num.set(rigth,num.get(mid));
+        num.set(mid,jug);
+        Sort(num,left,mid-1);
+        Sort(num,mid+1,rigth);
+    }
+}
