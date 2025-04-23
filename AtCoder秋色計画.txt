@@ -1,0 +1,496 @@
+body {
+  background-color: #222 !important;
+  color: #dbd1cb !important;
+  border: 1px solid #ab9f91 !important;
+}
+a {
+  color: #d9cab1 !important;
+}
+.m-box_inner {/*AtCoder.jpのコンテストとかランキングとかの四角から―*/
+    background-color: #56473a !important
+}
+
+li>a:hover,.dropdown-menu>li>a:focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #483d31 !important
+}
+.header-bar{
+    background-color: #423535 !important;
+}
+
+li>a:hover,.pager li>a:focus {
+    background-color: #624b35 !important
+}
+
+
+
+/* header */
+#main-div.float-container {background: #625858 !important;}
+.float-container>#main-container {
+  background: #3e3c3b !important;
+  box-shadow: 0px 0px 10px 5px #888 !important;
+}
+
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
+  list-style-type: decimal;
+  background-color: #e86a6a !important;
+}
+
+div .div-profile-box { text-align: center;}
+.insert-participant-box {
+  padding: 34px 20px;
+  margin-bottom: 5px;
+  background-color: #56473a !important;
+  border-radius: 6px;
+}
+
+.cnvtb-fixed {/*トップバナー*/
+  position: -webkit-sticky;
+  position: sticky;
+  top:50px;
+  z-index: 999;
+  background-color: #757271 !important;
+}
+
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus {/*トップバナーの今いるとこ*/
+    color: #555;
+    background-color: #917c6b;
+    border: 1px solid #c8a488;
+    border-bottom-color: transparent
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {/**/
+    background-color: #7c5d3c !important
+}
+
+pre {/*出力例とかのの中の色*/
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #b4aeae;
+    background-color: #393012;
+    border: 1px solid #c8a488;
+    border-radius: 3px
+}
+
+.btn-default {/*上部copy*/
+    color: #aea195 !important;
+    background-color: #575452 !important;
+    border-color: #ccc
+}
+
+.btn-default:focus,.btn-default.focus {
+    color: #333 !important;
+    background-color: #808080 !important;
+    border-color: #8c8c8c
+}
+
+.btn-default:hover {/*上部copy選択時*/
+    color: #b4aeae !important;
+    background-color: #393012 !important;
+    border-color: #adadad
+}
+
+.btn-default:active:hover,.btn-default.active:hover,.open>.dropdown-toggle.btn-default:hover,.btn-default:active:focus,.btn-default.active:focus,.open>.dropdown-toggle.btn-default:focus,.btn-default:active.focus,.btn-default.active.focus,.open>.dropdown-toggle.btn-default.focus {/*上部copyクリック時*/
+    color: #333;
+    background-color: #884a33 !important;
+    border-color: #8c8c8c
+}
+
+.select2-container--bootstrap .select2-results__option[aria-disabled=true] {
+    color: #777;
+    cursor: not-allowed
+}
+
+.select2-container--bootstrap .select2-results__option[aria-selected=true] {
+    background-color: #60533f !important;
+    color: #d8c7c7
+}
+
+.select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {/*言語選択でカーソルがあったとこ*/
+    background-color: #a87e14c9 !important;
+    color: #c8bdb3
+}
+
+.select2-container--bootstrap .select2-selection {/*たしか言語選択まわり*/
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    background-color: #573e1f !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555 !important;
+    font-size: 14px;
+    outline: 0
+}
+
+.select2-container--bootstrap .select2-search--dropdown .select2-search__field {/*言語選択まわり*/
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    background-color: #7d664fd6 !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555 !important;
+    font-size: 14px
+}
+
+.select2-dropdown {/*言語選択まわり*/
+    background-color: #40290ca6 !important;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    left: -100000px;
+    width: 100%;
+    z-index: 1051
+}
+
+.ace_scroller {/*ソースコード書くとこ*/
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    background-color: #261a10e3;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: text;
+}
+
+.ace-tm .ace_gutter-active-line {/*ソースコード書くとこの現在選択してるとこ*/
+    background-color: #995959;
+}
+
+.ace-tm {/*ソースコード書くとこの文字からー(下)*/
+    background-color: #826b6b;
+    color: #bba095;
+}
+
+.ace-tm .ace_gutter {/*ソースコード書くとこ左*/
+    background: #60493a;
+    color: #333;
+}
+
+.btn-pre {/*四角の中のcopy*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 0 6px;
+  font-size: 12px;
+  color: #b4aeae;
+  cursor: pointer;
+  background-color: #796753;
+  border: 1px solid #c8a488;
+  border-radius: 0 4px 0 4px;
+  z-index: 30;
+}
+.btn-pre:hover {
+  color: #fff;
+  background-color: #7c6b3d;
+  border-color: #7c623d;
+}
+
+
+/*以下高さ自動調節のとこ*/
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc
+}
+
+.btn-default:focus,.btn-default.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad
+}
+
+.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default {
+    color: #6a645d !important;
+    background-color: #c1a795 !important;
+    border-color: #adadad
+}
+
+.btn-default:active:hover,.btn-default.active:hover,.open>.dropdown-toggle.btn-default:hover,.btn-default:active:focus,.btn-default.active:focus,.open>.dropdown-toggle.btn-default:focus,.btn-default:active.focus,.btn-default.active.focus,.open>.dropdown-toggle.btn-default.focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c
+}
+
+.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default {
+    background-image: none
+}
+
+.btn-default.disabled:hover,.btn-default[disabled]:hover,fieldset[disabled] .btn-default:hover,.btn-default.disabled:focus,.btn-default[disabled]:focus,fieldset[disabled] .btn-default:focus,.btn-default.disabled.focus,.btn-default[disabled].focus,fieldset[disabled] .btn-default.focus {
+    background-color: #fff;
+    border-color: #ccc
+}
+
+.btn-default .badge {
+    color: #fff;
+    background-color: #333
+}
+/*ここまで*/
+
+.panel {/*問題のとこ*/
+    margin-bottom: 20px;
+    /*color: #d9c9ba !important;*/
+    background-color: #79685b;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05)
+}
+
+.panel-default>.panel-heading {/*順位表のカスタマイズ*/
+    color: #dbd1cb;
+    background-color: #7d6e50;
+    border-color: #ddd
+}
+
+.select2-container--default .select2-selection--single {/*国と地域*/
+    background-color: #4f4030d6;
+    border: 1px solid #aaa;
+    border-radius: 4px
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {/*国と地域(選択したやつ)*/
+    background-color: #755a28ad;
+    /*color: #ffffff*/
+}
+
+.table-bordered>thead>tr>th,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>tbody>tr>td,.table-bordered>tfoot>tr>td {/*順位表縁*/
+    border: 1px solid #c4b7a9;
+}
+
+.table-hover>tbody>tr:hover {/*順位表カーソルあわせ*/
+    background-color: #483626
+}
+
+.form-control {/*順位表ユーザ名とかの枠*/
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #aca49b;
+    background-color: #645540;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.standings-result p {/*順位表たいむ*/
+  margin: 0 0 3px;
+  color: #d5c9ae;
+  font-size: 90%;
+}
+
+.standings-statistics td p, .standings-fa td p {/*順位表最速正解者とかの*/
+  margin: 0;
+  color: #d5c9ae;
+}
+
+.dropdown-menu {/*提出結果の下*/
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #735c46;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 3px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.select2-container--bootstrap .select2-selection--single .select2-selection__rendered {/*提出の問題とか言語のとこ*/
+    color: #d9cab1;
+    padding: 0
+}
+
+ol.linenums {/*解説のコード*/
+  background-color: #4f4131;
+}
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
+  list-style-type: decimal !important;
+  background-color: #826b6b !important;
+}
+
+.pagination>li>a,.pagination>li>span {/*順位表ページ*/
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #337ab7;
+    background-color: #735c49;
+    border: 1px solid #ddd;
+    margin-left: -1px
+}
+
+.post-footer { background-color: #332a22;}/*ホームの更新日時のとこ*/
+.panel-info>.panel-heading {/*ホームの重要な告知*/
+    color: #f28853;
+    background-color: #60584f;
+    border-color: #f1cdbc
+}
+
+#header .header-page li>a:hover,.dropdown-menu>li>a:focus {/*atcoder一番上カーソル合わせの色*/
+    text-decoration: none;
+    color: #262626;
+    background-color: #423535 !important
+}
+
+#header .header-inner {/*atcoder一番上*/
+        position: fixed;
+        z-index: 9;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #423535;
+        border-bottom: 5px double #2f2727;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box
+    }
+
+#header .header-page li.is-active a {/*atcoder一番上選択してるやつ*/
+        color: #d2a48f !important;
+    }
+
+#header .header-page li a:before {/*atcoder一番上*/
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #d2a48f !important;
+        -webkit-transition: width .4s;
+        transition: width .4s
+    }
+
+#header .header-page li a:hover {/*atcoder一番上カーソル合わせの色２*/
+        color: #d2a48f !important
+    }
+
+.m-box-news_post:before { /*AtCoder.jpのお知らせんとこの詳細を見るのアレ*/
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fff), to(rgba(255,255,255,0)));
+    background: linear-gradient(0deg, #715b47 50%, rgba(255,255,255,0) 100%)
+}
+
+::-webkit-scrollbar {/*スクロール*/
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #463026;
+}
+::-webkit-scrollbar-thumb {
+  background: #775647;
+  border-radius: 10px;
+}
+
+.pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>a:focus,.pager .disabled>span {/*prev*/
+    background-color: #423535;
+    cursor: not-allowed
+}
+.pager li>a,.pager li>span {/*next*/
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #423535;
+    border: 1px solid #ddd;
+    border-radius: 15px
+}
+.btn-primary {/*検索*/
+    color: #dbd1cb;
+    background-color: #6c614c;
+    border-color: #d9b277
+}
+
+.btn-primary:hover {/*hover=カーソルを当ててる状態っぽいね*/
+    color: #dbd1cb;
+    background-color: #4f4230;
+    border-color: #d9b277
+}
+
+.btn-primary:focus,.btn-primary.focus {/*離したやつ*/
+    color: #dbd1cb;
+    background-color: #79674c;
+    border-color: #eeccbf
+}
+
+.btn-primary:active:hover,.btn-primary.active:hover,.open>.dropdown-toggle.btn-primary:hover,.btn-primary:active:focus,.btn-primary.active:focus,.open>.dropdown-toggle.btn-primary:focus,.btn-primary:active.focus,.btn-primary.active.focus,.open>.dropdown-toggle.btn-primary.focus {/*クリックしてる状態っぽい*/
+    color: #dbd1cb;
+    background-color: #393023;
+    border-color: #d9b277
+}
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus {/*全ての提出*/
+    background-color: #6c614c;
+}
+
+#fixed-server-timer {/*右下時計*/
+    color: #2f2a27 !important;
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  width: 160px;
+  height: 80px;
+  margin: 0;
+  padding: 20px 0;
+  background-image: url('//img.atcoder.jp/assets/contest/digitalclock.png');
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 50;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none !important;
+}
