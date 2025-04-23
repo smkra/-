@@ -351,7 +351,7 @@ li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
     padding: 6px 12px;
     line-height: 1.42857143;
     text-decoration: none;
-    color: #337ab7;
+    color: #b78733;
     background-color: #735c49;
     border: 1px solid #ddd;
     margin-left: -1px
@@ -493,4 +493,18 @@ li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none !important;
+}
+
+.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus {/*順位表の現在ページ*/
+    z-index: 3;
+    color: #dbd1cb;
+    background-color: #463921;
+    border-color: #d9b277
+}
+
+.pagination>li>a:hover,.pagination>li>span:hover,.pagination>li>a:focus,.pagination>li>span:focus {/*順位表のページ離した時*/
+    z-index: 2;
+    color: #23527c;
+    background-color: #281212;
+    border-color: #ddd
 }
