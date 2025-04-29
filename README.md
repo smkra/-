@@ -7,3 +7,5 @@ This is your README. READMEs are where you can communicate what your project is 
 
 VRゲーム作成
 これも合同で制作。Unity使用、プログラム担当。シーン切り替えのフェードインやフェードアウト、条件での生成や消去、キャラがテキストを話す際にキャラの表情がゲーム内で変化するように、画面追尾、等沢山作った。
+
+これからも色々やっていく所存。
