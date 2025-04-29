@@ -1,7 +1,8 @@
 body {
   background-color: #222 !important;
   color: #dbd1cb !important;
-  border: 1px solid #ab9f91 !important;
+  text-shadow:0 0.5px 0 #cab0a12e,0 0.25px 5px #282420;
+  border:1px solid #ab9f91 !important;
 }
 a {
   color: #d9cab1 !important;
@@ -507,4 +508,13 @@ li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
     color: #23527c;
     background-color: #281212;
     border-color: #ddd
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {/*成績表の文字*/
+    color: #d9c5b2 !important;
+    text-shadow:0 0.5px 0 #cab0a117,0 0 3px #4f3f30;
+}
+.table {/*これも*/
+    color: #d9c5b2 !important;
+    text-shadow:0 0.5px 0 #cab0a117,0 0 3px #4f3f30;
 }
